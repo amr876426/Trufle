@@ -1,0 +1,36 @@
+.page{
+    position: fixed;
+    top: 1px;
+    height: 100%;
+    width: 100%;
+    z-index: 99999999999;
+    background: #00000061;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .title{
+        background: #fff8ec;
+        padding: 136px;
+        position: relative;
+        font-size: 30px;
+        font-weight: 600;
+        color: #555;
+        text-align: x;
+        width: 63%;
+        text-align: center;
+        border: 18px solid #fff;
+        border-radius: 17px;
+    }
+    .x{    
+        position: absolute;
+        right: 28px;
+        font-size: 38px;
+        top: 24px;
+        cursor: pointer;
+    }
+    img{
+        width: 305px;
+      margin-bottom: 20px
+    }
+}

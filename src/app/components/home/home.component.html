@@ -1,0 +1,149 @@
+<!-- HOME PAGE  -->
+<section id="home" class="home">
+  <div class="overlay">
+    <div class="logo d-flex align-items-center flex-column wow flipInX" data-wow-duration="1700ms">
+      <img src="../../../assets/imgs/logo.png">
+      <div class="title">
+        <h1>
+          <br> {{TitleHome}}
+        </h1>
+      </div>
+      <div class="icons-home d-flex align-items-center flex-row justify-content-between">
+        <div *ngFor="let item of insurance" class="group-icons wow bounceInUp " data-wow-delay="2.5s">
+          <p class="p1">
+            {{item.title}}
+            <br>INSURANCE
+          </p>
+          <img src="{{item.icon}}">
+        </div>
+      </div>
+    </div>
+    <div class="book d-flex align-items-center flex-row justify-content-around">
+      <div class="group-book">
+        <p>How Our Technology
+          <br>
+          <span>Will Grow Your Brokerage</span>
+        </p>
+        <div class="button wow zoomIn " data-wow-delay="1.5s">
+          <i class="fas fa-level-down-alt"></i>
+          <p> BOOK A DISSCUSSION </p>
+        </div>
+      </div>
+      <div class="group-book">
+        <p>How Our Technology
+          <br>
+          <span>Will Grow Your Brokerage</span>
+        </p>
+        <div class="button wow zoomIn " data-wow-delay="1.5s">
+          <i class="fas fa-level-down-alt"></i>
+          <p> BOOK AN INTRODUCTION </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURE US  -->
+<section id="feature" class="feature">
+  <div class="container">
+    <div class="col-md-6 " style="margin-top: 10px">
+      <div class="item d-flex align-items-center wow flex-row fadeInLeft" data-wow-delay=" 0.5s">
+        <img src="../../../assets/imgs/22.png">
+        <div class="data">
+          <h1> Tru
+            <span class="span1">WEB</span>
+          </h1>
+          <p> Your website is your first impression. Trufla’s creative design experts focus on interactive custom websites.
+            <span
+              routerLink="/see">See More</span>
+          </p>
+        </div>
+      </div>
+      <div class="item d-flex align-items-center wow fadeInLeft" data-wow-delay=" 0.5s">
+        <img src="../../../assets/imgs/11.png">
+        <div class="data">
+          <h1> Tru
+            <span class="span2">MOBILE</span>
+          </h1>
+          <p> Customers expect instant, barrier-free communication options,TruMobile produces refined
+            <span routerLink="/see">See More</span>
+          </p>
+        </div>
+      </div>
+      <div class="item d-flex align-items-center wow fadeInLeft" data-wow-delay=" 0.5s">
+        <img src="../../../assets/imgs/33.png">
+        <div class="data">
+          <h1> Tru
+            <span class="span3">CONNECT</span>
+          </h1>
+          <p>Quote, Bind, Issue! TruConnect uses real-time data data to deliver more quotes in less time binding ratio
+            <span
+              routerLink="/see">See More</span>
+          </p>
+        </div>
+      </div>
+      <div class="item d-flex align-items-center wow fadeInLeft" data-wow-delay=" 0.5s">
+        <img src="../../../assets/imgs/44.png">
+        <div class="data">
+          <h1> Tru
+            <span class="span4">API</span>
+          </h1>
+          <p> With a suite of insurance specific APIs, it has never been faster or easier to roll out new systems for your brokerage.
+            <span routerLink="/see">See More</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 d-flex hand align-items-center justify-content-end wow fadeInRight" data-wow-delay=".s">
+      <img src="../../../assets/imgs/bb.png">
+    </div>
+  </div>
+</section>
+
+<!-- WHO US  -->
+<section id="who-us" class="who-us">
+  <div class="overlay">
+    <div class="container d-flex align-items-center wow zommIn ">
+      <h2> ABOUT US</h2>
+      <div *ngFor="let about of aboutes">
+        <div class="title-search wow fadeIn " data-wow-delay="1.0s">
+          <p> {{about.title}} </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUR ADVANCED  -->
+<div id="our-advanced" class="our-advanced">
+  <div class="container">
+    <div class="group d-flex">
+      <div *ngFor="let feature of advamceds" class=" col-8">
+        <div class="wow fadeIn">
+          <h1>
+            <span> {{feature.title}}</span>
+            <br> {{feature.title2}}
+          </h1>
+        </div>
+        <div class="title wow fadeInLeft">
+          <i class="fas fa-align-left"></i>
+          <p> {{feature.pragraphe}}</p>
+        </div>
+      </div>
+      <div class="col-4 wow flash">
+        <img src="../../../assets/imgs/tree.png" class="img-responsive">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Leads  -->
+<section class="leads">
+  <div class="group-left wow flex-row fadeInLeft" data-wow-delay=" 1.5s">
+    <h2> Your Product Leads</h2>
+    <img src="../../../assets/imgs/arrows.png" class="img-responsive">
+  </div>
+  <div class="wow flex-row fadeInRight" data-wow-delay=" 1.5s">
+  <img src="../../../assets//imgs/leads.png" class="img-responsive">
+  </div>
+</section>
